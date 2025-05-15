@@ -1,4 +1,4 @@
-//! Implementation to integrate `bevy_fundsp` into `bevy_oddio`.
+//! Implementation to integrate `bevy_procedural_audio` into `bevy_oddio`.
 
 use {
     super::{Backend, DspAudioExt},

@@ -1,9 +1,13 @@
 #![allow(clippy::precedence)]
 
-use {
-    bevy::prelude::*,
-    bevy_fundsp::prelude::*,
-    bevy_oddio::{Audio, AudioPlugin, AudioSource},
+use bevy::prelude::*;
+
+use bevy_procedural_audio::prelude::*;
+
+use bevy_oddio::{
+  Audio,
+  AudioPlugin,
+  AudioSource,
 };
 
 fn main() {
@@ -17,27 +21,27 @@ fn main() {
         .run();
 }
 
-fn sine_wave() -> impl AudioUnit32 {
+fn sine_wave() -> impl AudioUnit {
     // Note is A4
     sine_hz(440.0) >> split::<U2>() * 0.2
 }
 
-fn triangle_wave() -> impl AudioUnit32 {
+fn triangle_wave() -> impl AudioUnit {
     // Note is G4
     triangle_hz(392.0) >> split::<U2>() * 0.2
 }
 
 fn interactive_audio(
-    input: Res<Input<KeyCode>>,
+    input: Res<ButtonInput<KeyCode>>,
     mut assets: ResMut<Assets<AudioSource<[f32; 2]>>>,
     dsp_manager: Res<DspManager>,
     mut audio: ResMut<Audio<[f32; 2], AudioSource<[f32; 2]>>>,
 ) {
-    if input.just_pressed(KeyCode::S) {
+    if input.just_pressed(KeyCode::KeyS) {
         audio.play_dsp(assets.as_mut(), &dsp_manager.get_graph(sine_wave).unwrap());
     }
 
-    if input.just_pressed(KeyCode::T) {
+    if input.just_pressed(KeyCode::KeyT) {
         audio.play_dsp(
             assets.as_mut(),
             &dsp_manager.get_graph(triangle_wave).unwrap(),

@@ -1,16 +1,22 @@
 //! Module for [`DspManager`].
 
-use {
-    crate::{
-        dsp_graph::DspGraph,
-        dsp_source::{DspSource, SourceType},
-        DEFAULT_SAMPLE_RATE,
-    },
-    bevy::{
-        prelude::{default, Resource},
-        utils::HashMap,
-    },
-    uuid::Uuid,
+use bevy::{
+  platform::collections::HashMap,
+  prelude::{
+    default,
+    Resource,
+  },
+};
+  
+use uuid::Uuid;
+
+use crate::{
+  dsp_graph::DspGraph,
+  dsp_source::{
+    DspSource,
+    SourceType,
+  },
+  DEFAULT_SAMPLE_RATE,
 };
 
 /// Manages the registered DSP sources.

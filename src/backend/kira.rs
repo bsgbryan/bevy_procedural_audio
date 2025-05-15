@@ -1,4 +1,4 @@
-//! Implementation to integrate `bevy_fundsp` into `bevy_kira_audio`.
+//! Implementation to integrate `bevy_procedural_audio` into `bevy_kira_audio`.
 
 use {
     super::Backend,

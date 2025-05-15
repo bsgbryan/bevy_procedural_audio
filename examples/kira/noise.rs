@@ -1,6 +1,10 @@
 #![allow(clippy::precedence)]
 
-use {bevy::prelude::*, bevy_fundsp::prelude::*, bevy_kira_audio::prelude::*};
+use bevy::prelude::*;
+
+use bevy_procedural_audio::prelude::*;
+
+use bevy_kira_audio::prelude::*;
 
 fn main() {
     App::new()
@@ -12,7 +16,7 @@ fn main() {
         .run();
 }
 
-fn white_noise() -> impl AudioUnit32 {
+fn white_noise() -> impl AudioUnit {
     white() >> split::<U2>() * 0.2
 }
 
