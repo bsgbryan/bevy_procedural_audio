@@ -1,6 +1,6 @@
 # Bevy Procedural Audio
 
-[![Bevy tracking](https://img.shields.io/badge/Bevy%20tracking-main-lightblue)](https://github.com/bevyengine/bevy/blob/main/docs/plugins_guidelines.md#main-branch-tracking) [![CI](https://github.com/bsgbryan/bevy_procedural_audio/actions/workflows/rust.yml/badge.svg)](https://github.com/bsgbryan/bevy_procedural_audio/actions/workflows/rust.yml) ![Crates.io](https://img.shields.io/crates/v/bevy_procedural_audio) ![Crates.io](https://img.shields.io/crates/l/bevy_procedural_audio) ![docs.rs](https://img.shields.io/docsrs/bevy_procedural_audio)
+[![CI](https://github.com/bsgbryan/bevy_procedural_audio/actions/workflows/rust.yml/badge.svg)](https://github.com/bsgbryan/bevy_procedural_audio/actions/workflows/rust.yml) ![Crates.io](https://img.shields.io/crates/v/bevy_procedural_audio) ![Crates.io](https://img.shields.io/crates/l/bevy_procedural_audio) ![docs.rs](https://img.shields.io/docsrs/bevy_procedural_audio)
 
 A third party Bevy plugin that integrates [FunDSP] into [Bevy].
 
@@ -55,12 +55,12 @@ fn play_noise(
 
 ```
 
-## License
-
-`bevy_procedural_audio` is distributed under the terms of both the MIT license and the Apache License (Version 2.0).
-
-See [LICENSE-APACHE](LICENSE-APACHE) and [LICENSE-MIT](LICENSE-MIT) for details.
-
 ## Acknowledgement
 
-I'd like to say thanks to the authors of [FunDSP] and [Bevy] for making this plugin possible.
+I'd like to offer a big thank you to the authors of [FunDSP] and [Bevy] for making this plugin possible.
+
+## License
+
+`bevy_procedural_audio` is distributed under the terms of either the MIT license or the Apache License (Version 2.0).
+
+See [LICENSE-APACHE](LICENSE-APACHE) and [LICENSE-MIT](LICENSE-MIT) for details.
