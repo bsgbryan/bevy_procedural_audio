@@ -8,6 +8,7 @@ A third party Bevy plugin that integrates [FunDSP] into [Bevy].
 
 [FunDSP]: https://github.com/SamiPerttu/fundsp
 [Bevy]: https://github.com/bevyengine/bevy
+[bevy_fundsp]: https://github.com/harudagondi/bevy_fundsp
 [`bevy_kira_audio`]: https://github.com/NiklasEi/bevy_kira_audio
 [`bevy_oddio`]: https://github.com/harudagondi/bevy_oddio
 
@@ -57,7 +58,7 @@ fn play_noise(
 
 ## Acknowledgement
 
-I'd like to offer a big thank you to the authors of [FunDSP] and [Bevy] for making this plugin possible.
+I'd like to offer a big thank you to the authors of [FunDSP], [Bevy], and [bevy_fundsp] for making this plugin possible.
 
 ## License
 
